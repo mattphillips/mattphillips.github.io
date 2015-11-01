@@ -1,0 +1,20 @@
+author:
+  name: Matt Phillips
+  picture: assets/img/profile.jpg
+
+# site description
+description: Thoughts on Software
+
+# site url
+url: http://mattphillips.io
+
+# site title
+title: Matt Phillips
+
+# site version
+version: 0.0.1
+
+# your github username
+github_username: mattphillips
+
+highlighter: pygments
