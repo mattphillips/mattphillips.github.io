@@ -1,0 +1,28 @@
+<div class="sidebar col-md-2 hidden-sm hidden-xs">
+    <!-- side bar header -->
+    <div class="banner">
+        <div class="author-profile col-md-offset-2">
+            {% include author-profile.html %}
+        </div>
+    </div>
+    <!-- site nav -->
+    <nav class="site-nav-vertical col-md-offset-4">
+        <ul>
+           <li><a href="/about">About</a></li>
+           <li><a href="#">Posts</a></li>
+        </ul>
+    </nav>
+</div>
+
+<!-- Header -->
+<div class="banner hidden-md hidden-lg">
+    <div class="author-profile col-sm-offset-5 col-xs-offset-3">
+        {% include author-profile.html %}
+        <nav class="site-nav-horizontal">
+            <ul class="list-inline">
+               <li><a href="/about">About</a></li>
+               <li><a href="#">Posts</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
