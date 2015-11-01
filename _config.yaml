@@ -22,3 +22,5 @@ facebook_username: sirfilllips
 linkedin_username: mhphillips
 
 highlighter: pygments
+
+excerpt_separator: <!--excerpt_separator-->
