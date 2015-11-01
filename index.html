@@ -5,7 +5,13 @@ layout: default
   {% for post in site.posts %}
     <li>
       <a href="{{ post.permalink }}">{{ post.title }}</a>
-      <p>{{post.date}}</p>
+      <ul class="list-inline">
+          <li>
+              {{ post.date | date: "%B" }}
+              {{ post.date | date: "%d" }},
+              {{ post.date | date: "%Y" }}
+          </li>
+      </ul>
       <p>{{post.excerpt}}<p/>
     </li>
   {% endfor %}
