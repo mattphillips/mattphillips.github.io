@@ -14,6 +14,10 @@
     font-size:200%;
 }
 
+.header li:hover {
+    background-color:  #A5EFEA;
+}
+
 .banner {
     background-color:#48CAC2;
     color:#fff;
@@ -22,24 +26,6 @@
 
 .banner i {
     color:#fff;
-}
-
-.author-profile {
-    padding-top:10px;
-}
-
-.author-image {
-    width:100px;
-    height:100px;
-    margin-left:30px;
-}
-
-.author-contact {
-    margin-left:0px
-}
-
-.author-contact li {
-    padding-right:10px;
 }
 
 .site-nav-vertical {
@@ -52,10 +38,13 @@
 
 .site-nav-vertical li {
     margin-top:10px;
+    background-color:#48CAC2;
+    padding-left:80px
 }
 
 .site-nav-vertical a {
-    color:#FF4081;
+    color:#fff;
+    display:block
 }
 
 .site-nav-horizontal {
@@ -64,4 +53,5 @@
 
 .site-nav-horizontal a {
     color:#fff;
+    display:block
 }
