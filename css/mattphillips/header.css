@@ -1,0 +1,67 @@
+.sidebar {
+    width:250px;
+    background-color:#F2F2F2;
+    box-shadow: 2px 0px 0px #B4B3B3;
+    padding-right:0px;
+    height:100vh;
+}
+
+.sidebar ul {
+    padding-left:0;
+}
+
+.sidebar li a {
+    font-size:200%;
+}
+
+.banner {
+    background-color:#48CAC2;
+    color:#fff;
+    margin-top:25px;
+}
+
+.banner i {
+    color:#fff;
+}
+
+.author-profile {
+    padding-top:10px;
+}
+
+.author-image {
+    width:100px;
+    height:100px;
+    margin-left:30px;
+}
+
+.author-contact {
+    margin-left:0px
+}
+
+.author-contact li {
+    padding-right:10px;
+}
+
+.site-nav-vertical {
+    margin-top:50px;
+}
+
+.site-nav-vertical ul {
+    list-style-type: none;
+}
+
+.site-nav-vertical li {
+    margin-top:10px;
+}
+
+.site-nav-vertical a {
+    color:#FF4081;
+}
+
+.site-nav-horizontal {
+    margin-left:5px
+}
+
+.site-nav-horizontal a {
+    color:#fff;
+}
