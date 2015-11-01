@@ -1,3 +1,25 @@
+.author-profile {
+    padding-top:10px;
+}
+
+.author-image {
+    width:100px;
+    height:100px;
+    margin-left:30px;
+}
+
+.author-contact {
+    margin-left:0px
+}
+
+.author-contact li {
+    padding-right:10px;
+}
+
+.author-contact li:hover {
+    padding-right:10px;
+}
+
 .author-bio {
     font-style:italic;
     width:200px;
