@@ -1,18 +1,19 @@
 ---
 layout: default
 ---
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.permalink }}">{{ post.title }}</a>
-      <ul class="list-inline">
-          <li>
-              {{ post.date | date: "%B" }}
-              {{ post.date | date: "%d" }},
-              {{ post.date | date: "%Y" }}
-          </li>
-      </ul>
-      <p>{{post.excerpt}}<p/>
+<ul class="list-unstyled">
+    {% for post in site.posts %}
+    <li class="post-item">
+        <h1><a class="post-title" style="color:#000" href="{{ post.permalink }}">{{ post.title }}</a></h1>
+        <ul class="list-inline">
+            <li class="post-date">
+                {{ post.date | date: "%d" }}
+                {{ post.date | date: "%B" }}
+                {{ post.date | date: "%Y" }}
+            </li>
+        </ul>
+        <p>{{post.excerpt}}<p/>
+        <a href="{{ post.permalink }}" style="color:#FF4081"><h3>Continue reading  <i class="fa fa-angle-double-right"></i></h3></a>
     </li>
-  {% endfor %}
+    {% endfor %}
 </ul>
