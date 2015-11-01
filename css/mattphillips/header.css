@@ -6,11 +6,11 @@
     height:100vh;
 }
 
-.sidebar ul {
+.header ul {
     padding-left:0;
 }
 
-.sidebar li a {
+.header li a {
     font-size:200%;
 }
 
