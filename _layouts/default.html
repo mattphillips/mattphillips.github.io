@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+    <body>
+        <div class="row">
+            {% include header.html %}
+            <div class="col-md-8 article">
+                {{ content }}
+            </div>
+            <div class="col-md-2 stats"></div>
+        </div>
+    </body>
+</html>
