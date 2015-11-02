@@ -25,12 +25,9 @@
     margin-left:13px
 }
 
-.author-contact li {
-    padding-right:10px;
-}
-
-.author-contact li:hover {
-    padding-right:10px;
+.author-contact a {
+    padding-right:5px;
+    display:block;
 }
 
 .author-bio {
