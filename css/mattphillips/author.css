@@ -1,15 +1,28 @@
 .author-profile {
     padding-top:10px;
+    width:180px;
+    float: none;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .author-profile {
+        margin-left: 25px;
+    }
 }
 
 .author-image {
     width:100px;
     height:100px;
-    margin-left:30px;
+    margin-left:40px;
+}
+
+.author-name {
+    margin-left:8px
 }
 
 .author-contact {
-    margin-left:0px
+    margin-left:13px
 }
 
 .author-contact li {
