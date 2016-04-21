@@ -4,6 +4,7 @@ title:  "My first post"
 description: Inital post
 image: /assets/img/hello-world.png
 permalink: /my-first-post
+comments: true
 ---
 
 
@@ -17,7 +18,20 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
 ![Image of hello world](/assets/img/hello-world.png)
 
 {% highlight java linenos %}
-public void main(String[] args) {
+public static void main(String[] args) {
     System.out.println("Hello, World!");
 }
 {% endhighlight %}
+
+~~~ java
+public static void main(String[] args) {
+    System.out.println("Hello, World!");
+}
+~~~
+
+
+~~~ ruby
+def what?
+  42
+end
+~~~
