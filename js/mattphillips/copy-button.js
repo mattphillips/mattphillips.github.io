@@ -11,7 +11,8 @@ $(function() {
 
     $('.copy-button').click(function() {
       var $codeBlock = extractCodeBlock(this);
-      copyCodeToClipboard($codeBlock.text());
+      var code = extractCode($codeBlock);
+      copyCodeToClipboard(code);
     });
   }
 });
@@ -25,6 +26,16 @@ function addCopyButtonToCodeBlock(block, id) {
 
 function getEmptyCodeRowWithId(id) {
   return '<div class="row" id="' + ROW_ID_PREFIX + id + '"></div>';
+}
+
+function extractCode(codeBlock) {
+    var code = $(codeBlock).text();
+    console.log("in")
+    if (code.startsWith('> ')) {
+        console.log("working")
+        return code.substring(2);
+    }
+    return code;
 }
 
 function copyCodeToClipboard(code) {
