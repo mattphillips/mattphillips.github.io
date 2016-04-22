@@ -1,4 +1,4 @@
-const COPY_BUTTON = '<div class="col-md-1 col-sm-1 col-xs-1"><button type="button" class="btn btn-primary glyphicon glyphicon-copy copy-button"></button></div>';
+const COPY_BUTTON = '<div class="col-md-1"><button type="button" class="btn btn-primary glyphicon glyphicon-copy copy-button" data-toggle="tooltip" data-placement="top" title="Copy"></button></div>';
 const CODE_BLOCK_WIDTH = 'col-md-11 col-sm-11 col-xs-10';
 const ROW_ID_PREFIX = 'code-row-';
 const CODE_BLOCK_CLASS = '.highlighter-rouge'
@@ -30,9 +30,7 @@ function getEmptyCodeRowWithId(id) {
 
 function extractCode(codeBlock) {
     var code = $(codeBlock).text();
-    console.log("in")
     if (code.startsWith('> ')) {
-        console.log("working")
         return code.substring(2);
     }
     return code;
