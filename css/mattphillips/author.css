@@ -23,11 +23,12 @@
 }
 
 .author-contact {
-    margin-left:13px
+    margin-left:22px
 }
 
 .author-contact a {
     padding-right:5px;
+    padding-left:5px;
     display:block;
 }
 
