@@ -11,7 +11,12 @@
 }
 
 .header li a {
-    font-size:200%;
+    font-size:1.5rem;
+    text-decoration: none !important;
+}
+
+.header li:active {
+    background-color: #FF4081 !important;
 }
 
 .header li:hover {
