@@ -52,3 +52,13 @@ h1, h2, h3, h4 {
     font-family: 'Quicksand', sans-serif;
     color: {{ site.colours.secondary }};
 }
+
+blockquote {
+    color: #999;
+    border-left: 5px solid {{ site.colours.primary }};
+}
+
+blockquote p {
+    font-family: 'Quicksand', sans-serif;
+    font-style: italic;
+}
