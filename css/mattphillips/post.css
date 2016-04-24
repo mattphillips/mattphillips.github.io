@@ -1,27 +1,30 @@
+---
+---
+
 .post-item {
-    border-radius: 15px;
-    background: #EFEFEF;
     padding:10px;
     padding-left:50px;
     padding-right:50px;
     margin-top:20px;
+    border-style: solid;
+    border-width: 0px 0px 4px 0px;
+    border-color: {{ site.colours.secondary }};
 }
 
 .post-title {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 3.5rem !important;
+    color: {{ site.colours.primary }} !important;
 }
 
 .post-date {
     font-style:italic;
     color: grey;
     font-size: 0.8rem;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .post-content {
-  margin-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .post-content p, .post-content li, .post-item p {
@@ -29,10 +32,18 @@
 }
 
 .post-content p {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-.post-item a:link, .post-item a:visited, .post-item a:hover, .post-item a:active,
-.post-content a:link, .post-content a:visited, .post-content a:hover, .post-content a:active {
-    color: #48CAC2;
+.post-read {
+    font-size: 1.2rem;
+    color: {{ site.colours.secondary }} !important;
+}
+
+.post-read:hover {
+    color: {{ site.colours.primary }} !important;
+}
+
+.highlighter-rouge {
+    margin-bottom: 10px;
 }

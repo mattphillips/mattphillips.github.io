@@ -1,3 +1,6 @@
+---
+---
+
 .tags {
   list-style: none;
   margin: 0;
@@ -12,7 +15,7 @@
 .tag {
   background: #eee;
   border-radius: 3px 0 0 3px;
-  color: #999;
+  color: #999 !important;
   display: inline-block;
   height: 26px;
   line-height: 26px;
@@ -22,10 +25,11 @@
   text-decoration: none;
   -webkit-transition: color 0.2s;
   text-decoration: none !important;
+  font-size: 0.7rem;
 }
 
 .tag:visited {
-    color: #999;
+    color: #999 !important;
 }
 
 .tag::before {
@@ -52,12 +56,10 @@
 }
 
 .tag:hover {
-  background-color: #FF4081;
-  color: white;
+  background-color: {{ site.colours.secondary }};
+  color: white !important;
 }
 
 .tag:hover::after {
-    /*FF4081*/
-    /*48CAC2*/
-   border-left-color: #FF4081;
+   border-left-color: {{ site.colours.secondary }};
 }

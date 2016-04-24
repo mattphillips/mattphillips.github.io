@@ -1,17 +1,24 @@
+---
+---
+
 .btn-primary, .btn-primary:visited {
-    background-color: #48CAC2 !important;
-    border: #48CAC2;
+    background-color: {{ site.colours.primary }} !important;
+    border: {{ site.colours.primary }};
 }
 
 .btn-primary:hover {
-    background-color: #A5EFEA !important;
+    background-color: {{ site.colours.primaryLight }} !important;
 }
 
 .btn-primary:active {
-    background-color: #FF4081 !important;
+    background-color: {{ site.colours.secondary }} !important;
     box-shadow: none;
 }
 
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
+}
+
+.tooltip-inner {
+    font-size: 0.6rem;
 }

@@ -1,17 +1,7 @@
-.page {
-    font-size: 1rem;
-}
+---
+---
 
 .page h1 {
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 2.5rem;
-}
-
-.page p {
-  margin-bottom: 20px;
-}
-
-.page a:link, .page a:visited, .page a:hover, .page a:active {
-    color: #48CAC2;
+    font-size: 3.5rem;
+    color: {{ site.colours.primary }};
 }

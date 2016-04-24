@@ -1,3 +1,6 @@
+---
+---
+
 .sidebar {
     width:250px;
     background-color:#F2F2F2;
@@ -11,26 +14,27 @@
 }
 
 .header li a {
+    color: white;
     font-size:1.5rem;
     text-decoration: none !important;
 }
 
 .header li:active {
-    background-color: #FF4081 !important;
+    background-color: {{ site.colours.secondary }} !important;
 }
 
 .header li:hover {
-    background-color:  #A5EFEA;
+    background-color: {{ site.colours.primaryLight }};
 }
 
 .banner {
-    background-color:#48CAC2;
-    color:#fff;
+    background-color: {{ site.colours.primary }};
+    color: white;
     margin-top:25px;
 }
 
 .banner i {
-    color:#fff;
+    color: white;
 }
 
 .site-nav-vertical {
@@ -43,13 +47,14 @@
 
 .site-nav-vertical li {
     margin-top:10px;
-    background-color:#48CAC2;
+    background-color: {{ site.colours.primary }};
     padding-left:80px
 }
 
 .site-nav-vertical a {
-    color:#fff;
+    color: white;
     display:block;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .site-nav-horizontal {
@@ -57,6 +62,7 @@
 }
 
 .site-nav-horizontal a {
-    color:#fff;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
     display:block;
 }

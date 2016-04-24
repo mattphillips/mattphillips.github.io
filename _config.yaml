@@ -3,6 +3,10 @@ author:
   picture: assets/img/profile.jpg
   bio: Software engineer sharing his thoughts on code ...
 
+colours:
+    primary: "#48CAC2"
+    secondary: "#FF4081"
+    primaryLight: "#A5EFEA"
 # site description
 description: Thoughts on Software
 
