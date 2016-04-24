@@ -1,0 +1,13 @@
+.page {
+    font-size: 1rem;
+}
+
+.page h1 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.page p {
+  margin-bottom: 20px;
+}
