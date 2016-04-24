@@ -18,7 +18,9 @@
 }
 
 .author-name {
-    margin-left:10px
+    font-size: 1.4rem;
+    margin-left:10px;
+    color: white;
 }
 
 .author-contact {
@@ -32,7 +34,9 @@
 }
 
 .author-bio {
+    font-family: 'Quicksand', sans-serif;
     font-style:italic;
     width:200px;
     text-align: center;
+    font-size: 0.7rem;
 }
