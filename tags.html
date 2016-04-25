@@ -1,5 +1,6 @@
 ---
 layout: default
+hide-posts: true
 ---
 
 <h1 class="available-tags">Available tags: </h1>
@@ -9,7 +10,7 @@ layout: default
     {% endfor %}
 </ul>
 
-<h1 class="search-tag">Showing results for tag: </h1>
+<h1 class="search-tag hide">Showing results for tag: </h1>
 <h3 class="hide warning">Woops, something went wrong! No tags matching: </h3>
 
 {% include post-list.html %}
@@ -32,7 +33,6 @@ layout: default
     }
 
     function hideAllPosts() {
-        $('.search-tag').addClass('hide');
         $('.post-item').each(function (i, item) {
             item.remove();
         });
@@ -40,15 +40,15 @@ layout: default
 
     function showPostWithTag(tag) {
         $('.search-tag').append(tag);
+        $('.search-tag').addClass('show');
         var found = false;
         $('.post-item').each(function (i, item) {
             var tags = $(this).find('.tag').map(function (key, value) {
                 return $(this).text().toLowerCase();
             });
 
-            if ($.inArray( tag, tags ) == -1) {
-                $(this).remove();
-            } else {
+            if ($.inArray( tag, tags ) != -1) {
+                $(this).removeClass('hide');
                 found = true;
             }
         });
