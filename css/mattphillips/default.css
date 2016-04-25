@@ -7,13 +7,33 @@ html {
 }
 
 @media (min-width: 992px) {
-    .content {
-        margin-top: 20px;
-        margin-bottom: 30px;
-    }
     html {
         font-size: 20px;
         line-height: 2;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .content {
+        margin-left: 400px;
+    }
+}
+
+@media (min-width: 1201px) and (max-width: 1450px) {
+    .content {
+        margin-left: 475px;
+    }
+}
+
+@media (min-width: 1451px)  {
+    .content {
+        margin-left: 550px;
+    }
+}
+
+@media (max-width: 992px) {
+    .content {
+        margin-left: 0px !important;
     }
 }
 
