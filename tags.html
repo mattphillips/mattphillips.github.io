@@ -1,20 +1,46 @@
 ---
 layout: default
 ---
+
+<h1 class="available-tags">Available tags: </h1>
+<ul class="tags">
+    {% for tag in site.tags %}
+        <li><a href="/tags/?tag={{ tag[0] }}" class="tag">{{ tag[0] }}</a></li>
+    {% endfor %}
+</ul>
+
 <h1 class="search-tag">Showing results for tag: </h1>
+<h3 class="hide warning">Woops, something went wrong! No tags matching: </h3>
+
 {% include post-list.html %}
 
 <script type="text/javascript">
+    $(function() {
+        var tag = getParameterByName('tag').toLowerCase();
+        if (tag.trim() == '')
+            hideAllPosts();
+
+        else
+            showPostWithTag(tag);
+    });
+
     function getParameterByName(name) {
         name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
         var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
             results = regex.exec(location.search);
-        return results == null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+        return results == null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
     }
 
-    $(function() {
-        var tag = getParameterByName('tag').toLowerCase();
+    function hideAllPosts() {
+        $('.search-tag').addClass('hide');
+        $('.post-item').each(function (i, item) {
+            item.remove();
+        });
+    }
+
+    function showPostWithTag(tag) {
         $('.search-tag').append(tag);
+        var found = false;
         $('.post-item').each(function (i, item) {
             var tags = $(this).find('.tag').map(function (key, value) {
                 return $(this).text().toLowerCase();
@@ -22,13 +48,24 @@ layout: default
 
             if ($.inArray( tag, tags ) == -1) {
                 $(this).remove();
+            } else {
+                found = true;
             }
         });
-    });
+
+        if (!found) {
+            $('.warning').append(tag);
+            $('.warning').addClass('show');
+        }
+    }
 </script>
 
 <style>
     .search-tag {
-        margin-top: 50px;
+        margin-top: 30px;
     }
+     .available-tags {
+         margin-top: 40px;
+         margin-bottom: 20px;
+     }
 </style>
