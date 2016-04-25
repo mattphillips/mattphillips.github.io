@@ -15,23 +15,23 @@ html {
 
 @media (min-width: 992px) and (max-width: 1200px) {
     .content {
-        margin-left: 400px;
+        margin-left: 350px;
     }
 }
 
 @media (min-width: 1201px) and (max-width: 1450px) {
     .content {
-        margin-left: 475px;
+        margin-left: 425px;
     }
 }
 
 @media (min-width: 1451px)  {
     .content {
-        margin-left: 550px;
+        margin-left: 500px;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .content {
         margin-left: 0px !important;
     }
