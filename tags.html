@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<h1 id="searchTag">Showing results for tag: </h1>
+<h1 class="search-tag">Showing results for tag: </h1>
 {% include post-list.html %}
 
 <script type="text/javascript">
@@ -14,7 +14,7 @@ layout: default
 
     $(function() {
         var tag = getParameterByName('tag').toLowerCase();
-        $('#searchTag').append(tag);
+        $('.search-tag').append(tag);
         $('.post-item').each(function (i, item) {
             var tags = $(this).find('.tag').map(function (key, value) {
                 return $(this).text().toLowerCase();
@@ -25,5 +25,10 @@ layout: default
             }
         });
     });
-
 </script>
+
+<style>
+    .search-tag {
+        margin-top: 50px;
+    }
+</style>
