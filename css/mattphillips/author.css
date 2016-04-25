@@ -1,6 +1,6 @@
 .author-profile {
     padding-top:10px;
-    width:300px;
+    width:280px;
     float: none;
     margin: 0 auto;
 }
@@ -12,7 +12,15 @@
 }
 
 @media (max-width: 991px) {
+    .author-image {
+        margin-left: 80px !important;
+    }
+
     .author-name {
+        margin-left: 50px !important;
+    }
+
+    .author-bio {
         margin-left: 40px !important;
     }
 
@@ -22,24 +30,21 @@
 }
 
 .author-image {
-    width:150px;
-    height:150px;
-    margin-left:75px;
+    width:125px;
+    height:125px;
+    margin-left:60px;
 }
 
 .author-name {
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: white;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
-.author-contact {
-    margin-left:22px
-}
 
 .author-contact {
     width: 171px;
-    margin-left: 64px;
+    margin-left: 33px;
     margin-bottom: 10px;
 }
 
@@ -53,5 +58,6 @@
     font-family: 'Quicksand', sans-serif;
     font-style:italic;
     text-align: center;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    margin-right: 30px;
 }
