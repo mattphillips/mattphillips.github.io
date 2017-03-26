@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee');
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
+}
+
+body, html {
+  font-family: 'Handlee', cursive;
+  font-size: 16px;
+  line-height: 1.5rem;
+}
+
+.root {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.content {
+  animation: showBackground 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  background: #48CAC2;
+  padding: 1rem;
+  line-height: 2rem;
+  text-align: center;
+}
+
+@keyframes showBackground {
+  0% {
+    opacity: 0;
+    max-height: 0%;
+  }
+  100% {
+    max-height: 100%;
+  }
+}
+
+.name {
+  animation: showName 2s 0.5s forwards;
+  border-bottom: 0.25rem solid white;
+  border-top: 0.25rem solid white;
+  font-size: 2.5rem;
+  padding: 2rem;
+  visibility: hidden;
+}
+
+@keyframes showName {
+  0% {
+    transform: translate3d(0, -1000px, 0);
+  }
+  25% {
+    opacity: 1;
+    transform: translate3d(0, 1.5rem, 0);
+  }
+  50% {
+    transform: translate3d(0, -1rem, 0);
+  }
+  75% {
+    transform: translate3d(0, 0.5rem, 0);
+  }
+  100% {
+    transform: none;
+    visibility: visible;
+  }
+}
+
+.contact {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.contact li {
+  float: left;
+}
+
+.contact li a {
+  color: white;
+  display: block;
+  font-size: 2rem;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+}

@@ -1,4 +1,40 @@
----
-layout: default
----
-{% include post-list.html %}
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Matt Phillips</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <main class="root">
+      <section class="content">
+        <h1 class="name">Matt Phillips</h1>
+        <ul class="contact">
+          <li><a href="http://www.github.com/mattphillips" target="_blank"><i class="fa fa-lg fa-github"></i></a></li>
+          <li><a href="http://www.twitter.com/mattphillipsio" target="_blank"><i class="fa fa-lg fa-twitter"></i></a></li>
+          <li><a href="http://www.linkedin.com/in/mattphillipsio" target="_blank"><i class="fa fa-lg fa-linkedin"></i></a></li>
+        </ul>
+        <p>Reality Tech LTD</p>
+      </section>
+    </main>
+
+    <script>
+      if (localStorage.gaoff || document.location.hostname == "localhost") {
+        console.log("GA is off");
+      } else {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-76782135-1', 'auto');
+        ga('send', 'pageview');
+      }
+    </script>
+  </body>
+</html>
