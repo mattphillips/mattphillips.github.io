@@ -1,95 +1,76 @@
-@import url('https://fonts.googleapis.com/css?family=Handlee');
-
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
 }
 
-body, html {
-  font-family: 'Handlee', cursive;
+body,
+html {
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 1.5rem;
-}
-
-.root {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  height: 100vh;
-  justify-content: center;
-  width: 100vw;
+  background: #2c3e50;
+  height: 100%;
 }
 
 .content {
-  animation: showBackground 0.5s;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 600px;
-  background: #48CAC2;
-  padding: 1rem;
-  line-height: 2rem;
+  height: 100%;
+  width: 100%;
+  padding: 2rem 1rem 1rem;
   text-align: center;
+  overflow: auto;
+  max-width: 768px;
 }
 
-@keyframes showBackground {
-  0% {
-    opacity: 0;
-    max-height: 0%;
-  }
-  100% {
-    max-height: 100%;
+@media only screen and (min-width: 500px) {
+  .content {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
   }
 }
 
 .name {
-  animation: showName 2s 0.5s forwards;
-  border-bottom: 0.25rem solid white;
-  border-top: 0.25rem solid white;
-  font-size: 2.5rem;
-  padding: 2rem;
-  visibility: hidden;
-}
-
-@keyframes showName {
-  0% {
-    transform: translate3d(0, -1000px, 0);
-  }
-  25% {
-    opacity: 1;
-    transform: translate3d(0, 1.5rem, 0);
-  }
-  50% {
-    transform: translate3d(0, -1rem, 0);
-  }
-  75% {
-    transform: translate3d(0, 0.5rem, 0);
-  }
-  100% {
-    transform: none;
-    visibility: visible;
-  }
+  color: #48cac2;
+  font-size: 60px;
+  line-height: 72px;
+  letter-spacing: 4px;
+  margin: 2rem 0;
 }
 
 .contact {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   list-style-type: none;
   padding: 0;
 }
 
-.contact li {
-  float: left;
-}
-
 .contact li a {
-  color: white;
-  display: block;
+  color: #ecf0f1;
   font-size: 2rem;
   padding: 1rem;
-  text-align: center;
-  text-decoration: none;
+}
+
+.contact li a:hover {
+  color: #48cac2;
+}
+
+.image {
+  background: url('https://s.gravatar.com/avatar/60616ad114783d27fc5662ffee9a209d?size=496&default=retro') no-repeat center;
+  background-size: 100%;
+  border: solid 2px #ecf0f1;
+  border-radius: 50%;
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+}
+
+.bio {
+  color: #ecf0f1;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin: 2rem 0;
 }
