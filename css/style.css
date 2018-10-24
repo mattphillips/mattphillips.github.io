@@ -40,14 +40,16 @@ html {
   font-size: 60px;
   line-height: 72px;
   letter-spacing: 4px;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 
 .contact {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  padding: 0;
+  padding: 0.5rem 0;
+  border-top: 1px solid #ecf0f1;
+  border-bottom: 1px solid #ecf0f1;
 }
 
 @media only screen and (min-width: 500px) {
@@ -80,5 +82,16 @@ html {
   color: #ecf0f1;
   font-size: 1.25rem;
   line-height: 2rem;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
+}
+
+.cv {
+  color: #ecf0f1;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+.cv:hover {
+  color: #48cac2;
 }
