@@ -45,9 +45,15 @@ html {
 
 .contact {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   list-style-type: none;
   padding: 0;
+}
+
+@media only screen and (min-width: 500px) {
+  .contact {
+    justify-content: center;
+  }
 }
 
 .contact li a {
