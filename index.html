@@ -1,54 +1,79 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Matt Phillips</title>
-  <meta name="description" content="London based open source software engineer">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Matt Phillips</title>
+    <meta name="description" content="Open source software engineer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <section class="content">
-    <div>
-      <div class="image"></div>
-      <h1 class="name">Matt Phillips</h1>
-      <p class="bio">
-        London based open source software engineer passionate for solving complex problems with elegant solutions;
-        writing clean, test-driven code; learning new technologies, techniques and best-practices.
-      </p>
-      <p class="bio">
-        Passionate for pure functional programming.
-      </p>
-      <ul class="contact">
-        <li><a href="http://www.github.com/mattphillips" title="GitHub" rel="noopener" target="_blank"><i class="fab fa-github"></i></a></li>
-        <li><a href="http://www.twitter.com/mattphillipsio" title="Twitter" rel="noopener" target="_blank"><i class="fab fa-twitter"></i></a></li>
-        <li><a href="http://www.linkedin.com/in/mattphillipsio" title="LinkedIn" rel="noopener" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-        <li><a href="http://www.medium.com/@mattphillipsio" title="Medium" rel="noopener" target="_blank"><i class="fab fa-medium-m"></i></a></li>
-      </ul>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="content">
       <div>
-        <a class="cv" href="/assets/matt-phillips-cv.pdf" title="CV" rel="noopener" target="_blank">CV</a>
+        <div class="image"></div>
+
+        <h1 class="name">Matt Phillips</h1>
+        <p class="bio">
+          Open source software engineer passionate for solving complex problems with elegant solutions;
+          writing clean, test-driven code; learning new technologies, techniques and best-practices.
+        </p>
+        <p class="bio">
+          Passionate for pure functional programming.
+        </p>
+        <div style="border-top: 2px solid black; border-bottom: 2px solid black; margin: 1.5rem 0;">
+          <ul class="contact">
+            <li>
+              <a href="http://www.github.com/mattphillips" title="GitHub" rel="noopener" target="_blank"
+                ><span class="social github"></span
+              ></a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com/mattphillipsio" title="Twitter" rel="noopener" target="_blank"
+                ><span class="social twitter"></span
+              ></a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/in/mattphillipsio" title="LinkedIn" rel="noopener" target="_blank"
+                ><span class="social linkedin"></span
+              ></a>
+            </li>
+            <li>
+              <a href="http://www.medium.com/@mattphillipsio" title="Medium" rel="noopener" target="_blank"
+                ><span class="social medium"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div style="text-align: center">
+          <a class="cv" href="/assets/matt-phillips-cv.pdf" title="CV" rel="noopener" target="_blank">CV</a>
+        </div>
       </div>
-    </div>
-  </section>
-  <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-  <script>
-    if (localStorage.gaoff || document.location.hostname == "localhost") {
-      console.log("GA is off");
-    } else {
-      (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-          (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date(); a = s.createElement(o),
-          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-      ga('create', 'UA-76782135-1', 'auto');
-      ga('send', 'pageview');
-    }
-  </script>
-</body>
+    </section>
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script>
+      if (localStorage.gaoff || document.location.hostname == 'localhost') {
+        console.log('GA is off');
+      } else {
+        (function(i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r;
+          (i[r] =
+            i[r] ||
+            function() {
+              (i[r].q = i[r].q || []).push(arguments);
+            }),
+            (i[r].l = 1 * new Date());
+          (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m);
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-76782135-1', 'auto');
+        ga('send', 'pageview');
+      }
+    </script>
+  </body>
 </html>
