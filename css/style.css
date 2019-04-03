@@ -69,13 +69,12 @@ html {
 }
 
 .image {
-  background: url('https://s.gravatar.com/avatar/60616ad114783d27fc5662ffee9a209d?size=496&default=retro') no-repeat center;
+  background: url('/assets/img/profile.jpeg') no-repeat center;
   background-size: 100%;
-  border: solid 2px #ecf0f1;
   border-radius: 50%;
-  display: inline-block;
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
 }
 
 .bio {
