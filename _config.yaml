@@ -19,6 +19,8 @@ shortname: mattphillips
 # site title
 title: Matt Phillips
 
+include: [".well-known"]
+
 # site version
 version: 0.0.1
 

@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/mattphillips
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://mattphillips.io
+  * I am mattphillips (https://keybase.io/mattphillips) on keybase.
+  * I have a public key ASChwRzXw6cEo0kZQMpdnhA1drnJDyeq5PjLhpsS_T1qrgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120a1c11cd7c3a704a3491940ca5d9e103576b9c90f27aae4f8cb869b12fd3d6aae0a",
+      "host": "keybase.io",
+      "kid": "0120a1c11cd7c3a704a3491940ca5d9e103576b9c90f27aae4f8cb869b12fd3d6aae0a",
+      "uid": "94bbc0f2a86033206fb782423d09fd19",
+      "username": "mattphillips"
+    },
+    "merkle_root": {
+      "ctime": 1562160250,
+      "hash": "cce539b35e3fc314a6505397ba6263e3827b414de1f6952f8a5c5c94c75689a357f1445eaa8e78e42ffacd9c99ff4bcc896772790e63fbb7054aa5652a5d8d0b",
+      "hash_meta": "b6a1d02ceb2a7ea382347cb9c6b0918b9ad2dcfef3e3e666bc11d64b565bba09",
+      "seqno": 5688138
+    },
+    "service": {
+      "entropy": "ObvkovizEhs97nteC+zQptxk",
+      "hostname": "mattphillips.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "3.1.2"
+  },
+  "ctime": 1562160258,
+  "expire_in": 504576000,
+  "prev": "188e32f114d8a24a498c02f04b58dc95d8df8613c5b6f9a525f2ba62b021a499",
+  "seqno": 11,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgocEc18OnBKNJGUDKXZ4QNXa5yQ8nquT4y4abEv09aq4Kp3BheWxvYWTESpcCC8QgGI4y8RTYokpJjALwS1jcldjfhhPFtvmlJfK6YrAhpJnEIFyY/LGoL39eu5WvsWyKdRoUAW3DdrtBLu6QjqVR2W4mAgHCo3NpZ8RAmqPPYh4epnSTd5YQ5/U7gA7LJCxpp8PLHRB0FOEyol8gXCqDotTZSetXSqhS0YEjyrpJMV6/iCB2h1bVQVzaAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIJaw5Qz4Z9ViOnwv2RKBs4/NB11LySEwmTzQ1iYq9flko3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/mattphillips
+
+==================================================================
